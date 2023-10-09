@@ -1,0 +1,31 @@
+{
+  "name": "react-hands-on",
+  "version": "1.0.0",
+  "description": "React concepts",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/appy281/react-hands-on.git"
+  },
+  "keywords": [
+    "react",
+    "hands-on"
+  ],
+  "author": "Apurva Dhakre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/appy281/react-hands-on/issues"
+  },
+  "homepage": "https://github.com/appy281/react-hands-on#readme",
+  "devDependencies": {
+    "parcel": "^2.9.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
