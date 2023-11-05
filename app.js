@@ -1,11 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import './app.css'
+import HaldiramsImg from './resources/haldirams.jpeg';
+import KojiImg from './resources/whispering-bamboo.jpg';
+import WhisperingBambooImg from './resources/koji.jpg';
+import FoodAppLogo from './resources/food-app-logo.png';
+
+
 
 const Header = () => {
  return(<div className="hdr-cont">
     <div className="hdr-logo">
-        <img src="https://img.freepik.com/free-vector/restaurant-logo-editorial-template_23-2148701251.jpg"></img>
+        <img src={FoodAppLogo}></img>
     </div>
     <div className="hdr-nav-cont">
         <ul>
@@ -20,9 +26,9 @@ const Header = () => {
 };
 
 // eslint-disable-next-line react/prop-types
-const RestaurantCard = ({label}) => {
+const RestaurantCard = ({label, image}) => {
 return <div className="res-crd-cont">
-        <image className="res-crd-img"></image>
+        <img className="res-crd-img" src={image}></img>
         <div className="res-crd-lbl">{label}</div>
         <div className="res-crd-rtg">{label}</div>
         <div className="res-crd-cns">{label}</div>
@@ -40,15 +46,20 @@ const Body = () => {
     return(<div className="bdy-cont">
         <Search/>
       <div className="ress-cont">
-        <RestaurantCard label={"Haldiram's"}/>
-        <RestaurantCard label={"Koji"}/>
-        <RestaurantCard label={"Whispering Bamboo"}/>
-        <RestaurantCard label={"Haldiram's"}/>
-        <RestaurantCard label={"Koji"}/>
-        <RestaurantCard label={"Whispering Bamboo"}/>
-        <RestaurantCard label={"Haldiram's"}/>
-        <RestaurantCard label={"Koji"}/>
-        <RestaurantCard label={"Whispering Bamboo"}/>
+        <RestaurantCard label={"Haldiram's"} image={HaldiramsImg}/>
+        <RestaurantCard label={"Koji"} image={KojiImg}/>
+        <RestaurantCard label={"Whispering Bamboo"} image={WhisperingBambooImg}/>
+        <RestaurantCard label={"Haldiram's"} image={HaldiramsImg}/>
+        <RestaurantCard label={"Koji"} image={KojiImg}/>
+        <RestaurantCard label={"Whispering Bamboo"} image={WhisperingBambooImg}/>
+        <RestaurantCard label={"Whispering Bamboo"} image={WhisperingBambooImg}/>
+        <RestaurantCard label={"Haldiram's"} image={HaldiramsImg}/>
+        <RestaurantCard label={"Koji"} image={KojiImg}/>
+        <RestaurantCard label={"Whispering Bamboo"} image={WhisperingBambooImg}/>
+        
+        <RestaurantCard label={"Whispering Bamboo"} image={WhisperingBambooImg}/>
+        <RestaurantCard label={"Whispering Bamboo"} image={WhisperingBambooImg}/>
+
       </div>
 
     </div>);

@@ -8,14 +8,15 @@
 
 .hdr-logo{
         display: flex;
-        width: 300px;
-        height: 300px;
+        padding: 20px 0 0 60px;
+        width: 200px;
+        height: 200px;
 }
 
 .hdr-nav-cont{
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: flex-end;
 }
 
@@ -35,11 +36,12 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
-    gap: 24px;
 }
 
 .search-cont{
    display: flex;
+   background-color: #bce06f;
+   padding: 32px 0 ;
 }
 
 .search-bx{
@@ -53,25 +55,27 @@
 
 .ress-cont{
     display: flex;
-    padding: 50px;
+    padding: 50px 0 50px 0;
     background-color: #ecf4c7;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .res-crd-cont{
-    display: flex;
-    flex-direction: column;
+   background-color: #ccdfa2;
     border-radius: 4px;
-    padding: 10px;
+    flex-direction: column;
     gap: 10px;
-    width: 300px;
-    background-color: #bce06f;
-    margin: 25px;
+    width: 284px;
+    margin: 20px;
+    padding: 1px 1px 10px;
+    display: flex;
 }
 
 .res-crd-lbl{
     display: flex;
+    font-size: 24px;
+    padding: 0 10px;
 }
 
 .res-crd-img{
@@ -82,7 +86,11 @@
 }
 .res-crd-rtg{
     display: flex;
+    padding: 0 10px;
 }
-.res-crd-csn{
+.res-crd-cns{
     display: flex;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #7f8b64
 }
